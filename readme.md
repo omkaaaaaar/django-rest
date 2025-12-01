@@ -18,7 +18,7 @@ ts api app will contain our all end points, models, etc. It will contain evrythi
 4. Over here we are making a usertype project API, where we will have user to write our data
 
 5. Define how our data should look like, in manage.py of 'api'
-   |\_ ts step is defined in models.py of api
+   | ts step is defined in models.py of api
 
 6. Now make migrations, for now we are using sqlite as the db, which is simple django provided db
 
@@ -30,4 +30,13 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
-7. Creating Serializers
+7. Creating Serializers:
+
+   - ts is a file which will tell python how to transform our model into json data that we can access in our api
+   - Create a new file "serializers.py" in api for ts
+
+8. Views.py 'app'
+
+- ts is where most of code will go into
+- ts is where we'll handle the logic of our api endpoints
+- create endpoints, we created a fake endpoint for testing
